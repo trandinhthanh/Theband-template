@@ -21,3 +21,22 @@ modal.addEventListener('click',hideForm)
 modalContainer.addEventListener('click',function(event){
     event.stopPropagation()
 })
+
+
+//Hamberger-menu
+
+const hiddenMenu = document.getElementById('hidden-menu')
+const elementNav = document.getElementById('nav')
+
+hiddenMenu.addEventListener('click',function() {
+    // elementNav.style.display = 'block'
+    
+    if (elementNav.style.display == 'block') {
+        elementNav.style.display = 'none'
+    } else {
+        elementNav.style.display = 'block'
+    }
+})
+
+
+

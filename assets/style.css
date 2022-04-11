@@ -77,6 +77,8 @@ html {
     display: inline-block;
 }
 
+
+
 #nav li {
     position: relative;
 
@@ -150,10 +152,15 @@ html {
 
 }
 
+#header #hidden-menu{
+    display: none;
+}
+
 #slider {
     position: relative;
     margin-top: 46px;
-    padding-top: 50%; /*kỹ thuật set backgroud-image*/
+    padding-top: 50%;
+    /*kỹ thuật set backgroud-image*/
     background-color: aqua;
     background-image: url(./img/slider/slider1.jpg);
     background-size: cover;
@@ -221,7 +228,7 @@ html {
     float: left;
     text-align: center;
     /* width: 33.333%; */
-  
+
 }
 
 #content .member-item .member-name {
@@ -482,17 +489,17 @@ html {
 }
 
 /* PC: >1024 */
-@media (min-width: 1024px) {
-    
-}
+@media (min-width: 1024px) {}
+
 /* Tablet: >768 and <1023 */
-@media (min-width: 768px) and (max-width: 1023px)  {
+@media (min-width: 768px) and (max-width: 1023px) {
     #content .content-section {
         max-width: 100%;
     }
+
     #content .member-item {
-      max-width: calc(100%/3);
-      
+        max-width: calc(100%/3);
+
     }
 
 }
@@ -502,10 +509,39 @@ html {
     #content .content-section {
         max-width: 100%;
     }
+
     #content .member-item {
         float: none;
         margin-top: 30px;
-        
-       
-      }
+    }
+    #nav{
+        display: none;
+    }
+    #nav>li{
+        display: block
+    }
+    #header #search-button{
+        display: none;
+    }
+    #nav.open-hidden-menu{
+        display: block;
+    }
+    /* #nav.open-hidden-menu,
+    #nav>li.open-hidden-menu{
+        display: block;
+    } */
+
+    #header #hidden-menu {
+        position: absolute;
+        display: block;
+        float: right;
+        padding: 13px 21px;
+        color: white;
+        top: 0;
+        right: 0;
+    }
+    #header #hidden-menu:hover{
+        background-color: #ccc;
+    }
+   
 }
