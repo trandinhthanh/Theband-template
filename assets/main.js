@@ -1,13 +1,14 @@
+//Close|Open Modal
 const buyBtns = document.querySelectorAll('.js-buy-ticket')
 const modal = document.querySelector('.js-modal')
 const closeModal = document.querySelector('.modal-close')
 const modalContainer = document.querySelector('.js-modal-container')
 
-
+//OpenModal
 function showFormTicket(){  
     modal.classList.add('open-modal')
 }
-
+//CloseModal
 function hideForm(){
     modal.classList.remove('open-modal')
 }
@@ -23,19 +24,17 @@ modalContainer.addEventListener('click',function(event){
 })
 
 
-//Hamberger-menu
+//Close|Open Menu
 
 const hiddenMenu = document.getElementById('hidden-menu')
 const elementNav = document.getElementById('nav')
 
 hiddenMenu.addEventListener('click',function() {
-    // elementNav.style.display = 'block'
-    
-    if (elementNav.style.display == 'block') {
-        elementNav.style.display = 'none'
-    } else {
-        elementNav.style.display = 'block'
-    }
+   if (elementNav.classList.contains('open-hidden-menu') == false) {
+        elementNav.classList.add('open-hidden-menu')
+   } else {
+        elementNav.classList.remove('open-hidden-menu')
+   }
 })
 
 

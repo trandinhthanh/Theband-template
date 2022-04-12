@@ -514,22 +514,21 @@ html {
         float: none;
         margin-top: 30px;
     }
-    #nav{
+    #header #nav{
         display: none;
     }
-    #nav>li{
+    #header #nav>li{
         display: block
     }
     #header #search-button{
         display: none;
     }
-    #nav.open-hidden-menu{
+    #header #nav.open-hidden-menu{
         display: block;
     }
-    /* #nav.open-hidden-menu,
-    #nav>li.open-hidden-menu{
+    #header #nav.open-hidden-menu{
         display: block;
-    } */
+    }
 
     #header #hidden-menu {
         position: absolute;
