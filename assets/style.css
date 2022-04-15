@@ -10,6 +10,10 @@ html {
 }
 
 /* Common */
+button{
+    appearance: none;
+    -webkit-appearance: none;
+}
 .clear {
     clear: both;
 }
