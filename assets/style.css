@@ -290,26 +290,26 @@ html {
     display: block;
 }
 
-.tour-item-time,
+#content .tour-item-time,
 #content .tour-item-img:hover {
     opacity: 0.5;
 }
 
-.tour-item-body {
+#content .tour-item-body {
     background-color: white;
     padding: 15px;
 }
 
-.tour-item-time,
-.tour-item-text {
+#content .tour-item-time,
+#content .tour-item-text {
     margin-top: 15px;
 }
 
-.tour-item-text {
+#content .tour-item-text {
     line-height: 1.4;
 }
 
-.tour-item-btn {
+#content .tour-item-btn {
     text-decoration: none;
     background-color: black;
     color: white;
@@ -318,7 +318,7 @@ html {
     border: none;
 }
 
-.tour-item-btn:hover {
+#content .tour-item-btn:hover {
     background-color: #ccc;
     color: black;
 }
@@ -542,5 +542,12 @@ html {
     #header #hidden-menu:hover{
         background-color: #ccc;
     }
-   
+    #content .tour-item{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .contact-content .contact-content-mb{
+        width: 100%;
+        margin-top: 10px;
+    }
 }
