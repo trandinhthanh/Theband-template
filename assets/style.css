@@ -355,6 +355,9 @@ button{
     color: white;
     cursor: pointer;
     float: right;
+    appearance: none;
+    -webkit-appearance: none;
+
 }
 
 .contact-form .submit-form-btn:hover {
