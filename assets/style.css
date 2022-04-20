@@ -81,11 +81,8 @@ button{
     display: inline-block;
 }
 
-
-
 #nav li {
     position: relative;
-
 }
 
 #nav>li:hover>a {
@@ -131,6 +128,15 @@ button{
     background-color: rgb(255, 251, 251);
     display: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation-name: toggle;
+    animation-duration: 0.1s;
+    -o-animation-timing-function: ease;
+}
+
+@keyframes toggle {
+    from{height: 0px;}
+    to{height: 114px;}
+    0%{}
 }
 
 .subnav li:hover {
@@ -163,9 +169,8 @@ button{
 #slider {
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
     /*kỹ thuật set backgroud-image*/
-    background-color: aqua;
+    padding-top: 50%;
     background-image: url(./img/slider/slider1.jpg);
     background-size: cover;
     background-position: center;
@@ -533,9 +538,7 @@ button{
     #header #nav.open-hidden-menu{
         display: block;
     }
-    #header #nav.open-hidden-menu{
-        display: block;
-    }
+   
 
     #header #hidden-menu {
         position: absolute;

@@ -40,7 +40,7 @@ hiddenMenu.addEventListener('click', function () {
 const elementItemsMenu = document.querySelectorAll('#nav li a')
 for (let index = 0; index < elementItemsMenu.length; index++) {
     elementItemsMenu[index].addEventListener('click', function (event) {
-        //dùng nextElementSibling để lấy ra node <ul> sau đó kiểm tra
+        //use nextElementSibling to take node <ul> 
         isSubnav = elementItemsMenu[index].nextElementSibling && elementItemsMenu[index].nextElementSibling.classList.contains('subnav')
         if (isSubnav) {
             event.preventDefault();
